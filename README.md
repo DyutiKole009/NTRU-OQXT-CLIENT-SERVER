@@ -1,6 +1,9 @@
 # NTRU-OQXT-CLIENT-SERVER
 
-The first objective of the project is to separate the server and client codes from NTRU-OQXT to perform post-quantum setup and search. The server code would run inside a CentOS virtual machine hosted via QEMU, while the client code would run on the local machine. Socket-based communication between the client and server is implemented in C++.
+The primary objective of this project is to separate the server and client implementations with secure socket connections, enabling post-quantum setup and search in [NTRU-OQXT](https://github.com/debadrita05/NTRU-OQXT.git) - a prototype implementation of the highly efficient post-quantum secure conjunctive SSE scheme from the paper *Highly Scalable Searchable Symmetric Encryption for Boolean Queries from NTRU Lattice Trapdoors*, *Debadrita Talapatra, Indian Institute of Technology Kharagpur, Sikhar Patranabis, IBM Research India, and Debdeep Mukhopadhyay, Indian Institute of Technology Kharagpur* published by the International Association for Cryptologic Research in *IACR Communications in Cryptology (CIC)*, Volume 2, Number 2, 2025. 
+DOI: [10.62056/ae89n59p1](https://doi.org/10.62056/ae89n59p1). 
+
+The server code shall run inside a CentOS virtual machine hosted via QEMU, while the client code will run on the local machine. A secure communication channel is established between the client and server using TCP socket connections. The codebase is implemented in C/C++.
 
 ## System Requirements
 
